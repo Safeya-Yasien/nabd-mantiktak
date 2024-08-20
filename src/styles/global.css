@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+:root {
+  --dark-blue: #1e2a38;
+  --off-white: #f5f5f5;
+  --white-color: #fff;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}

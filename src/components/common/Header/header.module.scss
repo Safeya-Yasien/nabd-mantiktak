@@ -1,0 +1,13 @@
+@import "../../../styles/variables";
+
+.topHeader {
+  background-color: $dark-blue;
+  color: $white-color;
+  padding: 5px 15px;
+}
+.navbar {
+  background-color: $off-white;
+  .navLink {
+    color: $black-color;
+  }
+}

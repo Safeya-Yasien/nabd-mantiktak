@@ -25,7 +25,7 @@ const Header = () => {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
               <Nav.Link href="#home">الرئيسية</Nav.Link>
-              <Nav.Link href="#link">أخبار عاجلة</Nav.Link>
+              <Nav.Link href="last-news">أخبار عاجلة</Nav.Link>
               <NavDropdown title="صحة" id="basic-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">غذاء</NavDropdown.Item>
               </NavDropdown>

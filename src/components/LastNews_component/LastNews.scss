@@ -1,0 +1,12 @@
+.card-body h4 {
+  position: relative;
+}
+.card-body h4::before {
+  content: "";
+  position: absolute;
+  right: -10px;
+  top: 3px;
+  height: 80%;
+  width: 3px;
+  background-color: #ac0000;
+}

@@ -4,10 +4,22 @@
   background-color: $dark-blue;
   color: $white-color;
   padding: 5px 15px;
+  .userAuth{
+    color: $white-color;
+  }
 }
 .navbar {
   background-color: $off-white;
+  .navbarBrand {
+    font-weight: bold;
+    font-size: 30px;
+    span {
+      color: $dark-blue;
+      color: red;
+    }
+  }
   .navLink {
     color: $black-color;
+    font-size: 25px;
   }
 }

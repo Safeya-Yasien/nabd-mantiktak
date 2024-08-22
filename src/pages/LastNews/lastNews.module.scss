@@ -1,4 +1,4 @@
-@import '../../styles/variables';
+@import "../../styles/variables";
 
 .breakingNews {
   .title {
@@ -18,11 +18,11 @@
       background-color: #ac0000;
     }
   }
-  .breakingNewsItem{
+  .breakingNewsItem {
     background-color: $off-white;
     padding: 20px;
     margin-bottom: 20px;
-    .header{
+    .header {
       background-color: $black-color;
       color: $white-color;
       font-weight: bold;
@@ -30,9 +30,9 @@
       font-size: 20px;
       margin-bottom: 20px;
     }
-    .content{
+    .content {
       font-size: 18px;
-
+      color: $black-color;
     }
   }
 }

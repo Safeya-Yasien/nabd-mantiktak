@@ -2,9 +2,9 @@ import "./News.scss";
 
 const News = () => {
   return (
-    <div className="container mt-5">
+    <div className="container">
       <div className="title">
-        <h2 className=" fw-bold">آخر الأخبار</h2>
+        <h2 className="fw-bold">آخر الأخبار</h2>
       </div>
       <div className="body  d-flex">
         <h3 className="text-light fs-3">تغطية مستمرة</h3>

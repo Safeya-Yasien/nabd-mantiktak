@@ -1,8 +1,5 @@
-<<<<<<< HEAD
 import styles from "./footer.module.scss";
 const { footerTop, footerTitle, menu, menuTitle } = styles;
-=======
->>>>>>> a25870dd50bffe4b53448952593c57807d701cc1
 const Footer = () => {
   return (
     <footer>

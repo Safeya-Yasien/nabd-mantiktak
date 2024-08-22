@@ -3,6 +3,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import styles from "./home.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClock } from "@fortawesome/free-regular-svg-icons";
+import { SingleNew } from "../../components/nabdMantiktak";
 const {
   introVideo,
   latestNews,
@@ -10,9 +11,7 @@ const {
   latestNewsList,
   date,
   title,
-  singleNew,
-  content,
-  label,
+
 } = styles;
 
 const Home = () => {
@@ -61,30 +60,10 @@ const Home = () => {
           <Col lg={6}>
             <Row>
               <Col lg={6}>
-                <div className={singleNew}>
-                  <a href="#">
-                    <div>
-                      <img src="src\assets\2.jpg" alt="new" className="w-100" />
-                      <div className={label}>شرق اوسط</div>
-                    </div>
-                    <div className={content}>
-                      <h3>خبر عاجل مش عارف ايه</h3>
-                    </div>
-                  </a>
-                </div>
+                <SingleNew />
               </Col>
               <Col lg={6}>
-                <div className={singleNew}>
-                  <a href="#">
-                    <div>
-                      <img src="src\assets\2.jpg" alt="new" className="w-100" />
-                      <div className={label}>شرق اوسط</div>
-                    </div>
-                    <div className={content}>
-                      <h3>خبر عاجل مش عارف ايه</h3>
-                    </div>
-                  </a>
-                </div>
+                <SingleNew />
               </Col>
             </Row>
           </Col>

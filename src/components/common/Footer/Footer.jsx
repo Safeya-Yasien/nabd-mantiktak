@@ -1,15 +1,16 @@
 import styles from "./footer.module.scss";
+const { footerTop, footerTitle, menu, menuTitle } = styles;
 const Footer = () => {
   return (
     <footer>
       <div className="container">
-        <div className="footer-top">
+        <div className={footerTop}>
           <div className="row">
-            <div className="col-md-6 col-lg-3 about-footer">
-              <h3>
+            <div className="col-md-3 col-lg-3">
+              <h3 className={footerTitle}>
                 نب<span>ض</span> منطقتك
               </h3>
-              <ul>
+              <ul className={menu}>
                 <li>
                   <a href="">انصل بنا</a>
                 </li>
@@ -37,11 +38,11 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div className="col-md-6 col-lg-2 about-footer">
+            <div className="col-md-3 col-lg-3">
               <div className="footer-title">
-                <h4>تابعونا</h4>
+                <h4 className={menuTitle}>تابعونا</h4>
               </div>
-              <ul>
+              <ul className={menu}>
                 <li>
                   <a href="#">تطبيقاتنا</a>
                 </li>
@@ -59,12 +60,11 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-
-            <div className="col-md-6 col-lg-3 about-footer">
+            <div className="col-md-3 col-lg-3">
               <div className="footer-title">
                 <h4>الأقسام</h4>
               </div>
-              <ul>
+              <ul className={menu}>
                 <li>
                   <a href="#">صحة</a>
                 </li>
@@ -81,6 +81,10 @@ const Footer = () => {
                   <a href="#">وفيات</a>
                 </li>
               </ul>
+            </div>
+            <div className="col-md-3 col-lg-3 text-center">
+              <img src="src\assets\design.png" alt="new" className="w-100" />
+              <p>لبلدنا والناس والحرية</p>
             </div>
           </div>
         </div>

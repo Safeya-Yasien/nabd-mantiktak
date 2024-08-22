@@ -1,0 +1,21 @@
+.Home-section2 {
+  padding: 4rem 50px;
+}
+.Home-section2 h2 {
+  position: relative;
+}
+.Home-section2 h2::before {
+  content: "";
+  position: absolute;
+  right: -10px;
+  top: 3px;
+  height: 70%;
+  width: 4px;
+  background-color: #ac0000;
+}
+.Home-section2 .card {
+  transition: 0.3s;
+}
+.Home-section2 .card:hover {
+  border-bottom: 5px solid #ac0000;
+}

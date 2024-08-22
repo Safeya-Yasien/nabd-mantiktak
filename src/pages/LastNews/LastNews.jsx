@@ -1,4 +1,3 @@
-import React from "react";
 import News from "../../components/LastNewsComponents/News";
 import "./LastNews.scss";
 import LastNews_Component from "../../components/LastNews_component/Lastnews";

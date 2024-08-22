@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleUser } from "@fortawesome/free-regular-svg-icons";
 
 import styles from "./header.module.scss";
+import { NavLink } from "react-router-dom";
 const { topHeader, userAuth, navbar, navLink, navbarBrand } = styles;
 
 const Header = () => {
@@ -20,16 +21,16 @@ const Header = () => {
       </div>
       <Navbar expand="lg" className={navbar}>
         <Container fluid>
-          <Navbar.Brand href="#home" className={navbarBrand}>
+          <Navbar.Brand as={NavLink} to="/" className={navbarBrand}>
             نب<span>ض</span> منطقتك
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="#home" className={navLink}>
+              <Nav.Link as={NavLink} to="/" className={navLink}>
                 الرئيسية
               </Nav.Link>
-              <Nav.Link href="last-news" className={navLink}>
+              <Nav.Link as={NavLink} to="last-news" className={navLink}>
                 أخبار عاجلة
               </Nav.Link>
               <NavDropdown

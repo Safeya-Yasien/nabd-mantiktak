@@ -1,4 +1,4 @@
-import image from "../../Assets/2.jpg";
+import image from "../../../Assets/2.jpg";
 import "./LastNews.scss";
 
 function LastNews_Component() {

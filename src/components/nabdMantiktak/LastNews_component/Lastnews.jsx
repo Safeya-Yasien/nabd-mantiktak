@@ -1,5 +1,7 @@
 import image from "../../../Assets/2.jpg";
-import "./LastNews.scss";
+import styles from "./LastNews.module.scss";
+
+const { title } = styles;
 
 function LastNews_Component() {
   return (
@@ -10,8 +12,8 @@ function LastNews_Component() {
             <img src={image} width={"100%"} height={"100%"} alt="..." />
           </div>
           <div className="col-md-7">
-            <div className="card-body p-1">
-              <h4 className="fs-4 fw-bold">منوعات </h4>
+            <div className={`card-body p-1`}>
+              <h4 className={` ${title} fs-4 fw-bold`}>منوعات </h4>
               <h5 className="card-title fs-5 mb-3">
                 ختام فعاليات القافلة المائية بقرية بنى بخيت بمركز بنى سويف
               </h5>

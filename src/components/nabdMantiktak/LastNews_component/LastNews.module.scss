@@ -1,7 +1,7 @@
-.card-body h4 {
+.title {
   position: relative;
 }
-.card-body h4::before {
+.title::before {
   content: "";
   position: absolute;
   right: -10px;

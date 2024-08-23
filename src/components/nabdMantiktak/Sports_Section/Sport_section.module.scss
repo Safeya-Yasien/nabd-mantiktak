@@ -1,14 +1,14 @@
 .sport h2 {
   position: relative;
-}
-.sport h2::before {
-  content: "";
-  position: absolute;
-  right: -15px;
-  top: 5px;
-  height: 70%;
-  width: 6px;
-  background-color: #ac0000;
+  &::before {
+    content: "";
+    position: absolute;
+    right: -15px;
+    top: 5px;
+    height: 70%;
+    width: 6px;
+    background-color: #ac0000;
+  }
 }
 .singleNew {
   position: relative;

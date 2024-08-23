@@ -1,0 +1,18 @@
+.title {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 30px;
+    h2 {
+      padding: 0 20px 0 0;
+      margin-bottom: 0;
+      font-weight: bold;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      height: 30px;
+      width: 6px;
+      background-color: #ac0000;
+    }
+  }

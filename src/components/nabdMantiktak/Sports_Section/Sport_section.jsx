@@ -1,19 +1,21 @@
 import img from "../../../Assets/sport2.webp";
 import image from "../../../Assets/sport1.webp";
 
-import "./Sport_section.scss";
+import styles from "./Sport_section.module.scss";
+
+const { sport, content, singleNew } = styles;
 
 function Sport_Section() {
   const newsComponents = Array.from({ length: 3 }, (_element, index) => (
-    <div className="col-lg-4 sport mb-5" key={index}>
+    <div className={`${sport} col-lg-4  mb-5`} key={index}>
       <h2 className="fs-3 fw-bold ">رياضة</h2>
-      <div className="singleNew">
+      <div className={singleNew}>
         <a href="#">
           <div>
             <img src={img} alt="new" className="w-100" />
           </div>
-          <div className="content">
-            <h3 className="fs-5 ">
+          <div className={content}>
+            <h3 className="fs-5">
               النجم الأرجنتيني باولو ديبالا ديبالا يودع روما "متأثرا" ويتوجه إلى
               السعودية
             </h3>

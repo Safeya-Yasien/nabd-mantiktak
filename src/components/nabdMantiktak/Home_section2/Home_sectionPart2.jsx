@@ -21,7 +21,7 @@ function Home_sectionPart2() {
   ));
   return (
     <div>
-      <div className="container Home_section_Part2">
+      <div className="container-fluid Home_section_Part2">
         <h2 className="fs-3 fw-bold mb-4">زوارنا يتصفحون الآن </h2>
         <div>{newsComponents}</div>
       </div>

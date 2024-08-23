@@ -19,7 +19,7 @@ const Home_section2 = () => {
 
   return (
     <div>
-      <div className="container Home-section2">
+      <div className="container-fluid Home-section2">
         <h2 className="fs-1 fw-bold mb-3 ">آخر الأخبار</h2>
         <div className="row">{newsComponents}</div>
       </div>

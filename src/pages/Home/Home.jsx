@@ -1,11 +1,14 @@
 import { Col, Container, Row } from "react-bootstrap";
+import img from "./../../Assets/sport3.webp";
+import imge from "./../../Assets/sport2.webp";
 
 import styles from "./home.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClock } from "@fortawesome/free-regular-svg-icons";
-import Home_section2 from "../../components/nabdMantiktak/Home_section2/Home_section2";
-import Home_sectionPart2 from "../../components/nabdMantiktak/Home_section2/Home_sectionPart2";
 import { SingleNew } from "../../components/nabdMantiktak";
+import { Home_section2 } from "../../components/nabdMantiktak";
+import { Home_sectionPart2 } from "../../components/nabdMantiktak";
+import { Sport } from "../../components/nabdMantiktak";
 
 const {
   introVideo,
@@ -14,6 +17,7 @@ const {
   latestNewsList,
   date,
   title,
+  title_sport,
 } = styles;
 
 const Home = () => {
@@ -77,6 +81,24 @@ const Home = () => {
         </Col>
         <Col lg={3}>
           <Home_sectionPart2 />
+        </Col>
+      </Row>
+      <Row className="row m-0" style={{ background: "rgb(239 239 239 / 31%)" }}>
+        <Col lg={9}>
+          <Sport />
+        </Col>
+        <Col lg={3}>
+          <div className="m-1">
+            <h3 className={title_sport}>استطلاع</h3>
+            <img
+              src={img}
+              className="mb-3"
+              width={"100%"}
+              height={"100%"}
+              alt=""
+            />
+            <img src={imge} width={"100%"} height={"100%"} alt="" />
+          </div>
         </Col>
       </Row>
     </section>

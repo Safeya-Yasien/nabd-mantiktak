@@ -1,15 +1,15 @@
-import React from "react";
 import { Container, Row } from "react-bootstrap";
-import LastNews_Component from "./../../components/nabdMantiktak/LastNews_component/Lastnews";
-import News from "./../../components/nabdMantiktak/LastNewsComponents/News";
 import styles from "./lastNews.module.scss";
+
+import { News } from "../../components/nabdMantiktak";
+import { Lastnews } from "../../components/nabdMantiktak";
 
 const { breakingNews, title, breakingNewsItem, header, content } = styles;
 
 const LastNews = () => {
   const newsComponents = Array.from({ length: 36 }, (_, index) => (
     <div className="col-lg-6 col-sm-12" key={index}>
-      <LastNews_Component />
+      <Lastnews />
     </div>
   ));
 

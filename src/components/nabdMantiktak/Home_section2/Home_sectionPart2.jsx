@@ -1,5 +1,6 @@
 import image from "../../../Assets/3.jpg";
-import "./Home_section2.scss";
+import styles from "./HomeSection2.module.scss";
+const { HomeSectionPart2, cardBody } = styles;
 
 function Home_sectionPart2() {
   const newsComponents = Array.from({ length: 3 }, (_element, index) => (
@@ -9,7 +10,7 @@ function Home_sectionPart2() {
           <img src={image} className="img-fluid" width={"100%"} alt="..." />
         </div>
         <div className="col-md-8">
-          <div className="card-body p-3 mb-2 ">
+          <div className={`${cardBody} card-body p-3 mb-2 `}>
             <h5 className="card-title fs-5 fw-bold mb-1"> عالم</h5>
             <p className="card-text fs-6 mb-1">
               مقتل 3 فلسطينيين بقصف طائرة مسيّرة في مخيم
@@ -21,7 +22,7 @@ function Home_sectionPart2() {
   ));
   return (
     <div>
-      <div className="container-fluid Home_section_Part2">
+      <div className={`${HomeSectionPart2} container-fluid `}>
         <h2 className="fs-3 fw-bold mb-4">زوارنا يتصفحون الآن </h2>
         <div>{newsComponents}</div>
       </div>
